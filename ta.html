@@ -1,0 +1,229 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: white;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background: #1e293b;
+            position: sticky;
+            top: 0;
+        }
+
+        header h2 {
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        section {
+            padding: 80px 10%;
+            text-align: center;
+        }
+
+        .home {
+            min-height: 85vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .home h1 {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .home span {
+            color: #38bdf8;
+        }
+
+        .home p {
+            font-size: 18px;
+            color: #cbd5e1;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 25px;
+            background: #38bdf8;
+            color: #0f172a;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        h2 {
+            color: #38bdf8;
+            margin-bottom: 25px;
+            font-size: 30px;
+        }
+
+        .about p {
+            line-height: 1.8;
+            color: #cbd5e1;
+        }
+
+        .skills-container,
+        .projects-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .skill, .project {
+            background: #1e293b;
+            padding: 25px;
+            border-radius: 10px;
+            width: 220px;
+            transition: 0.3s;
+        }
+
+        .skill:hover, .project:hover {
+            transform: translateY(-8px);
+            background: #334155;
+        }
+
+        .project p {
+            color: #cbd5e1;
+            margin-top: 10px;
+        }
+
+        .contact p {
+            margin: 12px;
+            color: #cbd5e1;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #1e293b;
+            color: #cbd5e1;
+        }
+
+        @media(max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 5px;
+                font-size: 14px;
+            }
+
+            .home h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>MyPortfolio</h2>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <h1>Hello, I'm <span>tarun</span></h1>
+        <p>I'm a Web Developer & Designer</p>
+        <a href="#contact" class="btn">Contact Me</a>
+    </section>
+
+    <section class="about" id="about">
+        <h2>About Me</h2>
+        <p>
+            Hello! I am a passionate web developer.
+            I enjoy creating modern, responsive and
+            user-friendly websites using HTML, CSS
+            and JavaScript.
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">Python</div>
+            <div class="skill">Java</div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="projects-container">
+
+            <div class="project">
+                <h3>Portfolio Website</h3>
+                <p>My personal portfolio website.</p>
+            </div>
+
+            <div class="project">
+                <h3>Calculator</h3>
+                <p>A simple calculator using JavaScript.</p>
+            </div>
+
+            <div class="project">
+                <h3>Landing Page</h3>
+                <p>A responsive website landing page.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: tarune@gmail.com</p>
+        <p>Phone: +91 9876543210</p>
+        <p>Location: India</p>
+        <a href="mailto:tarunname@gmail.com" class="btn">
+            Send Email
+        </a>
+    </section>
+
+    <footer>
+        <p>© 2026 tarun | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
